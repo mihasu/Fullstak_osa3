@@ -1,0 +1,30 @@
+{
+  "name": "personbackend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihasu/Fullstak_osa3.git"
+  },
+  "author": "Mikael Hasu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mihasu/Fullstak_osa3/issues"
+  },
+  "homepage": "https://github.com/mihasu/Fullstak_osa3#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "postman": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
