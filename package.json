@@ -9,7 +9,7 @@
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "build:ui": "rm -rf build && cd ../../Full_Stack/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../Full_stack_osa3/",
     "deploy": "git push heroku master",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",    
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push && npm run deploy",
     "logs:prod": "heroku logs --tail"
   },
   "repository": {
@@ -24,7 +24,9 @@
   "homepage": "https://github.com/mihasu/Fullstak_osa3#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "mongoose": "^5.7.1",
     "morgan": "^1.9.1",
     "postman": "^0.2.0"
   },
