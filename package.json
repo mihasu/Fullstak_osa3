@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon index.js",
+    "lint": "eslint .",
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "build:ui": "rm -rf build && cd ../Full_Stack/osa2/puhelinluettelo && npm run build --prod && cp -r build ../../../Full_stack_osa3/",
     "deploy": "git push heroku master",
@@ -32,6 +33,7 @@
     "postman": "^0.2.0"
   },
   "devDependencies": {
+    "eslint": "^6.4.0",
     "nodemon": "^1.19.2"
   }
 }
