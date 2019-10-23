@@ -37,7 +37,7 @@ app.get('/api/persons',(req,res) => {
   })
 })
 
-app.get('/api/persons/:id', (req,res) => {
+app.get('/api/persons/:id', (req,res,next) => {
   Person.findById(req.params.id).then(person => {
     if (person) {
       res.json(person.toJSON())
@@ -61,7 +61,7 @@ app.delete('/api/persons/:id', (req,res,next) => {
   //return newId
 //}
 
-app.post('/api/persons', (req,res) => { 
+app.post('/api/persons', (req,res,next) => { 
   const body = req.body
   
 
